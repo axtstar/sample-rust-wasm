@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./bootstrap.js"></script>
+  </head>
+  <body>
+    <!-- html -->
+    <div id="app">
+        <input v-model="text" type="text" />
+        <button v-on:click="greet">greet</button>
+        <br />
+        <span>
+        {{ message }}
+        </span>
+        <br />
+        <span>
+        {{ duration }}
+        </span>
+
+        <br />
+        <input v-model.number="number" type="text" />
+        <button v-on:click="fib_wasm">fib_wasm</button>
+        <button v-on:click="fib_js">fib_js</button>
+        <br />
+        <input v-model.number="left_val" type="text" />
+        <input v-model.number="right_val" type="text" />
+        <button v-on:click="number=add_wasm(left_val, right_val)">add</button>
+        <br />
+        <canvas
+          id="canvas"
+          height="600"
+          width="400">
+        </canvas>
+        <br />
+        <input @change="uploadFile" name="image" type="file" />
+        <button v-on:click="to_transparent">to_transparent</button>
+        
+        <button v-on:click="hello_p">hello_p_wasm</button>
+    </div>  
+  </body>
+</html>
