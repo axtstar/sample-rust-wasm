@@ -9,9 +9,6 @@ function fib(n) {
 var app = new Vue({
     el: '#app',
     data: {
-      text: '',
-      left_val: '',
-      right_val: '',
       number:10,
       message: '',
       canvas: null,
@@ -50,12 +47,6 @@ var app = new Vue({
         var end = Date.now();
         this.duration = (end - start) + 'ms';
 
-      },
-      add_wasm: function(left, right) {
-        return sample.add(left, right);
-      },
-      hello_p: function() {
-        sample.hello_p();
       },
       uploadFile: function(e){
         var canvas = document.querySelector('canvas');
