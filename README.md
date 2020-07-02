@@ -18,17 +18,32 @@ templates and usages of `wasm-pack`.
 
 ### 🐑 Use `cargo generate` to Clone this Template
 
-[Learn more about `cargo generate` here.](https://github.com/ashleygwilliams/cargo-generate)
+install wasm-pack
 
-```
-cargo generate --git https://github.com/rustwasm/wasm-pack-template.git --name my-project
-cd my-project
-```
+> https://rustwasm.github.io/wasm-pack/installer/
 
 ### 🛠️ Build with `wasm-pack build`
 
 ```
 wasm-pack build
+```
+
+pkg link
+```
+cd ./pkg
+npm link
+```
+
+
+```
+cd www
+npm link hello-world
+```
+
+
+```
+cd www
+npm run start
 ```
 
 ### 🔬 Test in Headless Browsers with `wasm-pack test`
