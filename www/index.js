@@ -1,6 +1,6 @@
 //import * as wasm from "hello-wasm-pack";
-import * as sample from "sample-wasm";
-import * as bg from "sample-wasm/sample_wasm_bg";
+import * as sample from "sample-rust-wasm";
+import * as bg from "sample-rust-wasm/sample_wasm_bg";
 
 function fib(n) {
     return n < 2 ? n : fib(n - 2) + fib(n - 1);

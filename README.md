@@ -1,20 +1,6 @@
-# 🦀🕸️ `wasm-pack-template`
+# 🦀🕸️ `sample-rust-wasm`
 
-A template for kick starting a Rust and WebAssembly project using
-[`wasm-pack`](https://github.com/rustwasm/wasm-pack).
-
-[**📚 Read this template tutorial! 📚**][template-docs]
-
-This template is designed for compiling Rust libraries into WebAssembly and
-publishing the resulting package to NPM.
-
-Be sure to check out [other `wasm-pack` tutorials online][tutorials] for other
-templates and usages of `wasm-pack`.
-
-[tutorials]: https://rustwasm.github.io/docs/wasm-pack/tutorials/index.html
-[template-docs]: https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html
-
-## 🚴 Usage
+## 🚴 build
 
 ### 🐑 Use `cargo generate` to Clone this Template
 
@@ -24,23 +10,24 @@ install wasm-pack
 
 ### 🛠️ Build with `wasm-pack build`
 
+build pkg
 ```
 wasm-pack build
 ```
 
-pkg link
+pkg link 
 ```
 cd ./pkg
 npm link
 ```
 
-
+npm link sample-rust-wasm
 ```
 cd www
-npm link hello-world
+npm link sample-rust-wasm
 ```
 
-
+start server
 ```
 cd www
 npm run start
