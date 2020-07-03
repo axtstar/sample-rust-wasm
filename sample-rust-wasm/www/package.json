@@ -1,10 +1,10 @@
 {
-  "name": "create-wasm-app",
+  "name": "sample-wasm-app",
   "version": "0.1.0",
-  "description": "create an app to consume rust-generated wasm packages",
+  "description": "wasm sample",
   "main": "index.js",
   "bin": {
-    "create-wasm-app": ".bin/create-wasm-app.js"
+    "sample-wasm-app": ".bin/create-wasm-app.js"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rustwasm/create-wasm-app.git"
+    "url": "https://github.com/axtstar/rust-samples/tree/master/sample-rust-wasm"
   },
   "keywords": [
     "webassembly",
@@ -20,12 +20,9 @@
     "rust",
     "webpack"
   ],
-  "author": "Ashley Williams <ashley666ashley@gmail.com>",
+  "author": "axt <axt_star@hotmail.com>",
   "license": "(MIT OR Apache-2.0)",
-  "bugs": {
-    "url": "https://github.com/rustwasm/create-wasm-app/issues"
-  },
-  "homepage": "https://github.com/rustwasm/create-wasm-app#readme",
+  "homepage": "https://jp.axtstar.com/",
   "devDependencies": {
     "copy-webpack-plugin": "^5.0.0",
     "create-wasm-app": "0.1.0",

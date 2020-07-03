@@ -9,27 +9,34 @@ install wasm-pack
 ### 🛠️ Build
 
 build pkg
+
 ```
 wasm-pack build
 ```
 
-npm link to local glocal
+npm link to local global
 
-pkg link 
+pkg link
+
 ```
 cd pkg
 npm link
 ```
 
 npm link sample-rust-wasm
+
 ```
 cd www
 npm link sample-rust-wasm
 ```
 
+### Start
+
 start server
+
 ```
 cd www
 npm run start
 ```
 
+http://localhost:8080
